@@ -1,0 +1,24 @@
+.tamaño-card{
+    color: #000000;
+    margin-bottom: 20px;
+}
+    
+.divcard{    
+    display: flex;
+    justify-content: space-around;
+}
+.img-card{
+    max-height: 240px;
+    min-height: 240px;
+}
+
+.infocard{
+    text-align: center;
+}
+.infocard a{
+    text-decoration: none;
+    color:black
+}
+.boton{
+    width: 300px;
+}

@@ -1,0 +1,14 @@
+.categorias{
+    display: flex;
+    margin: 30px;
+}
+
+.categorias a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+a.nombre{
+    text-decoration: none;
+    color:antiquewhite;
+}

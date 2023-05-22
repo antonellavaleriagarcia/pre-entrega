@@ -1,0 +1,12 @@
+.detail{
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 100px;
+}
+.textdetail{
+    padding: 20px;
+    text-align: left;
+}
