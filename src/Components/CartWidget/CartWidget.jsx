@@ -1,12 +1,16 @@
 import React from "react";
 import '../CartWidget/CartWidget.css';
-const CartWidget = () => {
+import { CartWidgetContext } from '../../Context/CartWidgetContext';
+import { useContext } from "react";
+import { Link } from "react-router-dom"
 
+const CartWidget = () => {
+    const {quaTotal} = useContext(CartWidgetContext);
     return (
         <>
-        <a className="colortext" href="">
-            <div>🛒 1</div>
-        </a>
+            <Link to='cart'>
+                🛒 {quaTotal > 0 && <span> {quaTotal} </span> }
+            </Link>
         </>
     )
 }

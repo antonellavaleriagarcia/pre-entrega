@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { Card, Button } from 'react-bootstrap';
 import './Item.css'
 
-const Item = ({id, nombre, precio, img}) => {
+const Item = ({id, nombre, precio, img, stock}) => {
   return (
     <div className='divcard col-4'>
       <Card style={{ width: '22rem' }} className='col-12 tamaño-card'>
@@ -12,6 +12,7 @@ const Item = ({id, nombre, precio, img}) => {
           <Card.Title>{nombre}</Card.Title>
           <Card.Text>
             ${precio}
+            <p>Stock: {stock}</p>
           </Card.Text>
           <Link to={`/item/${id}`}><Button className='boton' variant="outline-secondary"> Ver</Button> </Link>
         </Card.Body>
