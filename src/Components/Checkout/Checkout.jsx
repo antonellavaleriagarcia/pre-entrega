@@ -56,7 +56,7 @@ const Checkout = () => {
         <Form onSubmit={ manejadorFormulario }>
             {cart.map(producto => (
                 <div key={producto.item.id}>
-                    <p>{producto.item.nombre} - {producto.cantidad}: Precio: ${producto.item.precio}</p>
+                    <p>{producto.item.nombre} - {producto.cant}: Precio: ${producto.item.precio}</p>
                 </div>
             ))}
             <Form.Group className="mb-3" >
